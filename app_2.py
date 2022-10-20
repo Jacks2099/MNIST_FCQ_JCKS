@@ -13,7 +13,7 @@ if uploaded_file is not None:
   st.sidebar.image(image)
   label = teachable_machine_classification(image, 'keras_model.h5') 
   if label == 0:
-    st.write('Es una pizza')
+    st.write('Si es una pizza')
   
   else:
-    st.write('No es pizza')
+    st.write('No es una pizza')
